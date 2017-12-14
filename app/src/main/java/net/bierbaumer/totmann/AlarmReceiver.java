@@ -10,8 +10,8 @@ import android.os.SystemClock;
 import android.util.Log;
 
 public class AlarmReceiver extends BroadcastReceiver {
-    public static final String TAG = "AlarmReceiver";
-    public static final long TOTMANN_TIMEOUT = 5 * 24 * 60 * 60 * 1000;
+    private static final String TAG = "AlarmReceiver";
+    private static final long TOTMANN_TIMEOUT = 5 * 24 * 60 * 60 * 1000;
 
     public static void scheduleAlarm(Context context) {
         Log.d(TAG,"scheduleAlarm");

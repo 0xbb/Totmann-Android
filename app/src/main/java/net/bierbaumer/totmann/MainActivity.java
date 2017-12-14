@@ -6,7 +6,7 @@ import android.util.Log;
 import android.view.View;
 
 public class MainActivity extends Activity {
-    public static final String TAG = "MainActivity";
+    private static final String TAG = "MainActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
