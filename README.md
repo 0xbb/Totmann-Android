@@ -1,1 +1,2 @@
-# totmann-android [![Build Status](https://img.shields.io/travis/0xbb/otp-authenticator/master.svg?style=flat-square)](https://travis-ci.org/0xbb/otp-authenticator)
+# totmann-android [![Build Status](https://travis-ci.org/0xbb/totmann-android.svg?branch=master)](https://travis-ci.org/0xbb/totmann-android)
+
