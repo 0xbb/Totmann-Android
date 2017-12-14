@@ -1,0 +1,12 @@
+language: android
+android:
+  components: # see https://docs.travis-ci.com/user/languages/android/#Installing-a-newer-SDK-Platform-Tools-revision
+    - tools
+    - platform-tools
+    - tools
+
+    # The BuildTools version used by your project
+    - build-tools-27.0.2
+
+    # The SDK version used to compile your project
+    - android-26
