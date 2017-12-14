@@ -24,7 +24,7 @@ before_script:
   - echo no | android create avd --force -n test -t android-25 --abi google_apis/armeabi-v7a
   - travis_wait 30 emulator -avd test -no-window -writable-system &
   - echo a
-  - adb wait-for-device  shell "while [[ -z $(getprop sys.boot_completed) ]]; do sleep 1; done; input keyevent 82"
+  - adb wait-for-device  shell 'while [[ -z $(getprop sys.boot_completed) ]]; do sleep 1; done; input keyevent 82'
   - echo b
 
 script:
