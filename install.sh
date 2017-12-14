@@ -1,4 +1,5 @@
 #!/bin/bash
+set -eu
 
 adb push totmann.apk /sdcard/
 
