@@ -10,10 +10,21 @@ android:
 
     # The SDK version used to compile your project
     - android-26
+    
+    - sys-img-armeabi-v7a-google_apis-25
   
   licenses:
     - 'android-sdk-preview-license-.+'
     - 'android-sdk-license-.+'
     - 'google-gdk-license-.+'
     - '.+'
-script: ./gradlew assemble
+    
+#before_script:
+#  - android list target
+#  - echo no | android create avd --force -n test -t android-25 --abi google_apis/armeabi-v7a
+#  - emulator -avd test -no-window -writable-system &
+#  - travis_wait 30 adb wait-for-device shell 'while [[ -z $(getprop sys.boot_completed) ]]; do sleep 1; done; input keyevent 82'
+
+script:
+  - ./gradlew assemble
+ 
