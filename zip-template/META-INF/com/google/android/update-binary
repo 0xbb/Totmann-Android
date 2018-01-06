@@ -66,8 +66,9 @@ ui_print "~ Installing Totmann..."
 case "$androidVersion" in
  7*|7.*|7.*.*)
   unzip -qo "$ZIP" 'Totmann/*' -d '/system/priv-app'
-  mv '/system/priv-app/Totmann/99-totmann.sh' '/system/addon.d/'
-  chmod +x '/system/addon.d/99-totmann.sh'
+  mv '/system/priv-app/Totmann/91-totmann.sh' '/system/addon.d/'
+  chown 0.0 '/system/addon.d/91-totmann.sh'
+  chmod 755 '/system/addon.d/91-totmann.sh'
   ;;
 esac
 
